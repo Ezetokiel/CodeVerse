@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'mukta';
+    background-color: #fff5ff;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 5vw;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1vw;
+}
+
+nav ul li a{
+    color: #fafafa;
+    font-size: 2.4vh;
+    text-transform: uppercase;
+}
+
+
+img.logo{
+    height: 3.5em;
+    width: 12.25em;
+    margin-left: 5vw;
+    margin-top: 1.25vh;
+}
+
+a.active, a:hover{
+    color: #c9c5d0;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+div.top-part{
+    background-image: linear-gradient(to right, #54a5f2, #4e95fd, #6382ff, #8667fd, #ac3eee);
+    height: 80vh;
+}
+
+h1.resource-header{
+    margin: 14vh 0 0 15vw;
+    color: #fafafa;
+    font-size: 6vh;
+    line-height: 9vh;
+    width: 36vw;
+}
+
+img.books-logo{
+    height: 36vh;
+    width: 20vw;
+    position: absolute;
+    right: 15vw;
+    top: 24vh;
+}
+
+div.additional-resources{
+    background-color: #ffdfca;
+    height: 40vh;
+    width: 25vw;
+    text-align: center;
+    border-radius: 18px;
+    margin: 8vh 0;
+}
+
+div.resource-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img.python-logo{
+    height: 18vh;
+    width: 15vw;
+    margin-top: 8vh;
+}
+
+img.w3schools-logo{
+    height: 18vh;
+    width: 10vw;
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+}
+
+img.youtube-logo{
+    height: 20vh;
+    width: 12vw;
+    margin-top: 6vh;
+}
+
+a.resource-links{
+    font-size: 2.8vh;
+    color: #628281;
+}
+
+/* font sizes formatted √
+/* colour formatted (still confirm later on)
+/* naming convention and order of code formatted √

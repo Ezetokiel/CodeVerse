@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'mukta';
+}
+
+body{
+    background-color: #a9e1f0;
+}
+
+div.top-bar{
+    display: flex;
+    align-items: center;
+}
+
+div.lesson-container{
+    height: 120vh;
+    width: 100vw;
+    padding: 3vh 8vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+a.lessons{
+    background-color: #fafafa;
+    color: #000;
+    height: 7vh;
+    padding: 2vh 3vw;
+    border-radius: 18px;
+    font-size: 2.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a.lessons:hover{
+    color: #54a5f2;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+a.lessons:active{
+    color: #54a5f2;
+    text-decoration: underline;
+    background-color: #e8e8e8;
+    transition: 0.3s;
+}
+
+img.logo{
+    height: 3.5em;
+    width: 12.25em;
+    margin-left: 3vw;
+    margin-top: 1.25vh;
+}
+
+button.drop-button {
+    background-color: #73aabb;
+    color: #ffffff;
+    padding: 1.5vh 1.5vw;
+    font-size: 2.2vh;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    margin-left: 2vw;
+    margin-top: 1.25vh;
+}
+
+button.drop-button:hover{
+    background-color: #3e7683;
+    transition: 0.3s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 1.5vh 1vw;
+    min-width: 20vw;
+    border-radius: 10px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 1vh 1vw;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    font-size: 2.2vh;
+}
+  
+.dropdown-content a:hover{
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+.show{
+    display: block;
+}
+
+a.current-lesson, a.current-lesson:hover, a.current-lesson:active{
+    background-color: #bbe6f2;
+}

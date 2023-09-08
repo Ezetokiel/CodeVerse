@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'mukta';
+    background-color: #fff5ff;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 5vw;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 10vh;
+    margin: 0 1vw;
+}
+
+nav ul li a{
+    color: #fafafa;
+    font-size: 2.4vh;
+    text-transform: uppercase;
+}
+
+img.logo{
+    height: 3.5em;
+    width: 12.25em;
+    margin-left: 5vw;
+    margin-top: 1.25vh;
+}
+
+a:active, a:hover{
+    color: #c9c5d0;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+div.top-part{
+    background-image: linear-gradient(to right, #54a5f2, #4e95fd, #6382ff, #8667fd, #ac3eee);
+    height: 80vh;
+}
+
+div.welcome-message-portion{
+    width: 30vw;
+}
+
+div.welcome-portion{
+    margin-left: 15vw;
+    margin-top: 12vh;
+    padding-bottom: 16vh;
+}
+
+h1.top-welcome-message, p.bottom-welcome-message{
+    color: #fafafa;
+}
+
+h1.top-welcome-message{
+    font-size: 9vh;
+    line-height: 10vh;
+}
+
+p.bottom-welcome-message{
+    font-size: 4vh;
+    margin-bottom: 8vh;
+}
+
+a.view-courses-button{
+    background-color: #fafafa;
+    padding: 1.2vh 1.2vw;
+    justify-content: center;
+    font-size: 2.5vh;
+    border-radius: 22px;
+    color: #323035;
+    text-decoration: none;
+}
+
+a.view-courses-button:hover, a.view-courses-button:active{
+    background-color: #dbd9e0;
+    text-decoration: none;
+    color: #323035;
+}
+
+img.coding-icon{
+    height: 44vh;
+    width: 48.4vh;
+    position: absolute;
+    right: 15vw;
+    top: 20vh;
+}
+
+div.about-website{
+    padding: 8vh 10vw;
+    color: #323035;
+    width: 55vw;
+}
+
+img.gear-logo{
+    height: 48vh;
+    width: 48vw;
+    position: absolute;
+    right: 5vh;
+    top: 86vh;
+}
+
+.headers{
+    font-size: 4.5vh;
+}
+
+.descriptions{
+    font-size: 2.5vh;
+}
+
+.tips{
+    font-size: 3.6vh;
+    margin-left: 1vw;
+    margin-top: 5vh;
+}
+
+div.tips-for-learning-coding{
+    padding: 0 10vw 8vh;
+}
+
+div.bottom-part{
+    background-color: #c6c6c6;
+    padding: 2vh 0;
+    width: 100%;
+    text-align: center;
+}
+
+p.bottom-message{
+    font-size: 2.2vh;
+}
+
+a.additional-resources-link, a.additional-resources-link:visited{
+    color: #2736d2;
+}
+
+a.additional-resources-link:hover, a.additional-resources-link:active{
+    color: #a29df1;
+}
+
+/* fonts sizes formatted √ 
+/* colours formatted √
+/* naming convention and order of code formatted √

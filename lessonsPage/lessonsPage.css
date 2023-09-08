@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'mukta';
+    background-color: #fff5ff;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 5vw;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 10vh;
+    margin: 0 1vw;
+}
+
+nav ul li a{
+    color: #fafafa;
+    font-size: 2.4vh;
+    text-transform: uppercase;
+}
+
+img.logo{
+    height: 3.5em;
+    width: 12.25em;
+    margin-left: 5vw;
+    margin-top: 1.25vh;
+}
+
+a:active, a:hover{
+    color: #c9c5d0;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+div.top-part{
+    background-image: linear-gradient(to right, #54a5f2, #4e95fd, #6382ff, #8667fd, #ac3eee);
+    height: 80vh;
+}
+
+div.welcome-portion{
+    margin-left: 15vw;
+    margin-top: 16vh;
+    padding-bottom: 16vh;
+}
+
+h1.welcome-message{
+    font-size: 6.5vh;
+    color: #fafafa;
+    width: 34vw;
+    line-height: 9vh;
+    margin-bottom: 6vh;
+}
+
+a.enter-codingverse-button{
+    background-color: #fafafa;
+    padding: 1.5vh 1.5vw;
+    font-size: 2.5vh;
+    border-radius: 22px;
+    color: #323035;
+    text-decoration: none;
+}
+
+a.enter-codingverse-button:hover, a.enter-codingverse-button:active{
+    background-color: #dbd9e0;
+    text-decoration: none;
+    color: #323035;
+}
+
+img.teaching-picture{
+    height: 40vh;
+    width: 24vw;
+    position: absolute;
+    right: 15vw;
+    top: 22vh;
+}
+
+div.main-content{
+    margin: 8vh 10vw;
+}
+
+h1.replit-tutorial-header{
+    font-size: 4.5vh;
+}
+
+p.replit-tutorial-description, ol.replit-tutorial-steps li{
+    font-size: 2.8vh;
+}
+
+ol.replit-tutorial-steps{
+    list-style: none;
+    margin: 5vh 0;
+}
+
+a.replit-link, a.replit-link:visited{
+    color:#2736d2;
+}
+
+a.replit-link:hover, a.replit-link:active{
+    color: #a29df1;
+}
+
+img.replit-tutorial-photos{
+    height: 36vh;
+    width: 36vw;
+    margin: 4vh 0 6vh 4vw;
+}
+
+div.two-picture-sections{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* font sizes formatted √
+/* colour formatted √ 
+/* naming convention and order of code formatted √

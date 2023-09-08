@@ -1,0 +1,37 @@
+What is coding about
+What are functions
+Variables
+Data types
+Math operators
+If else
+While for
+Logical operators
+Lists
+Functions
+
+1. Go to replit.com
+2. Sign up with your gmail or your email
+3. Press "Create Repl" and click on "Python" under templates. 
+4. Name your "Repl" however you want to 
+5. Click "Create Repl"
+6. Wait for the Repl to load
+7. Start writing your code here
+8. Press "Run" when you are done with your code
+9. See if the code works
+10. To exit the Repl, click the icon on the top right hand corner and click profile. Then on the left side menu click on "Home"
+
+Colours:
+general font - #323035 (it literally looks the same as black)
+button background - #fafafa
+button hover and active - #dbd9e0
+
+Buttons: 
+padding: 1.2vh 1.2vw;
+font-size: 2.5vh; 
+color: #323035;
+background-color: #fafafa;
+
+Nav links:
+color: #fafafa;
+font-size: 2.4vh;
+text-transform: uppercase;
