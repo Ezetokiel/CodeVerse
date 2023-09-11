@@ -15,16 +15,17 @@
         <div class="dropdown">
             <button onclick="drop()" class="drop-button">Lessons</button>
             <div id="myDropdown" class="dropdown-content">
+                <a href="courseOverview.html">Back to lesson selector</a>
                 <a href="lesson1.html">1. What is coding about?</a>
                 <a href="lesson2.html" class="current-lesson">2. What are functions?</a>
                 <a href="lesson3.html">3. Variables</a>
                 <a href="lesson4.html">4. Data types</a>
-                <a href="lesson5.html">5. Type casting</a>
-                <a href="lesson6.html">6. If else statements</a>
-                <a href="lesson7.html">7. While and for loops</a>
-                <a href="lesson8.html">8. Logical operators</a>
-                <a href="lesson9.html">9. Lists</a>
-                <a href="lesson10.html">10. Functions</a>
+                <a href="lesson5.html">5. Lists</a>
+                <a href="lesson6.html">6. Math operators</a>
+                <a href="lesson7.html">7. If else statements</a>
+                <a href="lesson8.html">8. While and for loops</a>
+                <a href="lesson9.html">9. Logical operators</a>
+                <a href="lesson10.html">10. Writing your own functions</a>
             </div>
         </div>
     </div>
@@ -34,7 +35,45 @@
             <source src="videos/lesson2WhatAreFunctionsAbout.mp4">
         </video>
     </div>
+    <a href="lesson3.html" class="lesson-navigation-buttons">Next Lesson -></a>
 
+    <!--
+        <form class="question-form">
+        <div class="question-section">
+            <div class="questions">
+                <label class="question-labels" for="question1">What does print(“Hi”) do?</label><br>
+                <input type="radio" name="question1" id="option1">
+                <label for="option1" class="options">A. Print Hi to the console</label><br>
+                <input type="radio" name="question1" id="option2">
+                <label for="option2" class="options">B. Print Hello to the console</label><br>
+                <input type="radio" name="question1" id="option3">
+                <label for="option3" class="options">C. Print Hi to the code</label>
+            </div>
+            <br>
+            <div class="questions">
+                <label class="question-labels" for="question2">What does input(“Hello! What's your name?”) do?</label><br>
+                <input type="radio" name="question2" id="option4">
+                <label for="option4" class="options">A. Print Hello! What's your name? to the console</label><br>
+                <input type="radio" name="question2" id="option5">
+                <label for="option5" class="options">B. Asks for an input with the prompt  Hello! What's your name?</label><br>
+                <input type="radio" name="question2" id="option6">
+                <label for="option6" class="options">C. Gives an error message</label>
+            </div>
+            <br>
+            <div class="questions">
+                <label class="question-labels" for="question3">Where does the console appear in replit?</label><br>
+                <input type="radio" name="question3" id="option7">
+                <label for="option7" class="options">A. Top of the screen</label><br>
+                <input type="radio" name="question3" id="option8">
+                <label for="option8" class="options">B. Left of the screen</label><br>
+                <input type="radio" name="question3" id="option9">
+                <label for="option9" class="options">C. Right of the screen</label>
+            </div>
+            <button class="submit-button" onclick="submit()">Submit</button>
+        </div>
+    </form>
+    -->
+    
     <script>
         function drop(){
             document.getElementById("myDropdown").classList.toggle("show");

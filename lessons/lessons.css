@@ -9,6 +9,7 @@
 
 body{
     background-color: #a3dff7;
+    height: 128vh;
 }
 
 div.top-bar{
@@ -95,7 +96,7 @@ button.drop-button {
     margin-top: 1.25vh;
 }
 
-button.drop-button:hover{
+button.drop-button:hover, button.submit-button:hover{
     background-color: #3e7683;
     transition: 0.3s;
 }
@@ -134,10 +135,60 @@ a.current-lesson, a.current-lesson:hover, a.current-lesson:active{
 }
 
 video.video{
-    width: 80vw;
+    width: 84vw;
 }
 
 div.video-container{
     padding: 5vh 0;
     text-align: center;
 }
+
+div.text-container{
+    padding: 5vh 8vw 8vh 8vw;
+}
+
+p.lesson-one-content{
+    font-size: 3vh;
+}
+
+a.lesson-navigation-buttons{
+    background-color: #73aabb;
+    color: #ffffff;
+    padding: 1vh 1vw;
+    font-size: 2.2vh;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    margin-left: 8vw;
+}
+
+a.lesson-navigation-buttons:hover{
+    background-color: #3e7683;
+    transition: 0.3s;
+}
+
+/*
+div.question-section{
+    padding: 0 10vw 10vh 10vw;
+}
+
+label.question-labels{
+    font-size: 4vh;
+}
+
+label.options{
+    font-size: 3vh;
+}
+
+button.submit-button{
+    background-color: #73aabb;
+    color: #ffffff;
+    padding: 1vh 1vw;
+    font-size: 2.2vh;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 4vh;
+}
+
+*/

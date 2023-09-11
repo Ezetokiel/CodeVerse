@@ -15,20 +15,29 @@
         <div class="dropdown">
             <button onclick="drop()" class="drop-button">Lessons</button>
             <div id="myDropdown" class="dropdown-content">
+                <a href="courseOverview.html">Back to lesson selector</a>
                 <a href="lesson1.html">1. What is coding about?</a>
                 <a href="lesson2.html">2. What are functions?</a>
                 <a href="lesson3.html">3. Variables</a>
                 <a href="lesson4.html" class="current-lesson">4. Data types</a>
-                <a href="lesson5.html">5. Type casting</a>
-                <a href="lesson6.html">6. If else statements</a>
-                <a href="lesson7.html">7. While and for loops</a>
-                <a href="lesson8.html">8. Logical operators</a>
-                <a href="lesson9.html">9. Lists</a>
-                <a href="lesson10.html">10. Functions</a>
+                <a href="lesson5.html">5. Lists</a>
+                <a href="lesson6.html">6. Math operators</a>
+                <a href="lesson7.html">7. If else statements</a>
+                <a href="lesson8.html">8. While and for loops</a>
+                <a href="lesson9.html">9. Logical operators</a>
+                <a href="lesson10.html">10. Writing your own functions</a>
             </div>
         </div>
-      </div>
-      <script>
+    </div>
+
+    <div class="video-container">
+        <video controls class="video">
+            <source src="videos/lesson4DataTypes.mp4">
+        </video>
+    </div>
+    <a href="lesson5.html" class="lesson-navigation-buttons">Next Lesson -></a>
+
+    <script>
         function drop(){
             document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -45,6 +54,6 @@
                 }
             }
         }   
-      </script>
+    </script>
 </body>
 </html>
