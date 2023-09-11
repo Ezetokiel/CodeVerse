@@ -51,8 +51,8 @@ div.top-part{
 }
 
 div.welcome-message-portion{
-    width: 31vw;
-    margin-left: 12vw;
+    width: 35vw;
+    margin-left: 10vw;
 }
 
 div.welcome-portion{
@@ -94,7 +94,7 @@ img.coding-icon{
     height: 40vh; /*10 : 11*/
     width: 44vh;
     position: absolute;
-    right: 12vw;
+    right: 10vw;
     top: 20vh;
 }
 
