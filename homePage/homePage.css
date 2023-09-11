@@ -106,10 +106,10 @@ div.about-website{
 
 img.gear-logo{
     height: 48vh;
-    width: 48vw;
+    width: 30vw;
     position: absolute;
-    right: 5vh;
-    top: 86vh;
+    right: 8vw;
+    top: 84vh;
 }
 
 .headers{
@@ -132,7 +132,7 @@ div.tips-for-learning-coding{
 
 div.bottom-part{
     background-color: #c6c6c6;
-    padding: 2vh 0;
+    padding: 2vh 5vw;
     width: 100%;
     text-align: center;
 }

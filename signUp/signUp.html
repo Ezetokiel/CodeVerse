@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
+    <title>Sign Up | CodeVerse</title>
+    <link rel="shortcut icon" type="image/png" href="../Photos/gearLogo.png">
+</head>
+<body>
+
+<div id="signup-box">
+    <div class="up"> <!--changable to up/down-->
+        <h1>Sign up!</h1>
+        
+        
+        <input type="text" id="username" name="username" class="usernameImageInput" placeholder="Username" />
+        <input type="text" id="email" name="email" class="emailImageInput" placeholder="E-mail" />
+        <input type="password" id="password" name="password" class="passwordImageInput" placeholder="Password"/>
+        <input type="submit" id="signUp" name="signup_submit" value="Sign up"/>
+
+    </div>
+    <hr>
+    <a class="loginPage" href="../login/login.html">Already signed up? Log-in here!</a>
+</div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-analytics.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAlg8K9qZtFTBEStq2xN9oIL6Zuvie3cjw",
+      authDomain: "codeverse-49af1.firebaseapp.com",
+      databaseURL: "https://codeverse-49af1-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "codeverse-49af1",
+      storageBucket: "codeverse-49af1.appspot.com",
+      messagingSenderId: "223559847168",
+      appId: "1:223559847168:web:d1b54946928a1eaa2937e5",
+      measurementId: "G-Q735VKS6EQ"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+    signUp.addEventListener('click', async (e) => {
+        e.preventDefault();
+
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var username = document.getElementById('username').value;
+
+    try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const user = userCredential.user;
+        const lesson1 = "Lesson 1";
+        var lesson1CompletionStatus = false
+        const lesson2 = "Lesson 2";
+        var lesson2CompletionStatus = false
+        const lesson3 = "Lesson 3";
+        var lesson3CompletionStatus = false
+        const lesson4 = "Lesson 4";
+        var lesson4CompletionStatus = false
+        const lesson5 = "Lesson 5";
+        var lesson5CompletionStatus = false
+        const lesson6 = "Lesson 6";
+        var lesson6CompletionStatus = false
+        const lesson7 = "Lesson 7";
+        var lesson7CompletionStatus = false
+        const lesson8 = "Lesson 8";
+        var lesson8CompletionStatus = false
+        const lesson9 = "Lesson 9";
+        var lesson9CompletionStatus = false
+        const lesson10 = "Lesson 10";
+        var lesson10CompletionStatus = false
+
+        await set(ref(database, 'users/' + user.uid), {
+            username: username,
+            email: email
+        });
+        const userRef = ref(database, 'users/' + user.uid + '/lessoncompletion');
+        update(userRef, {
+            [lesson1]: lesson1CompletionStatus,
+            [lesson2]: lesson2CompletionStatus,
+            [lesson3]: lesson3CompletionStatus,
+            [lesson4]: lesson4CompletionStatus,
+            [lesson5]: lesson5CompletionStatus,
+            [lesson6]: lesson6CompletionStatus,
+            [lesson7]: lesson7CompletionStatus,
+            [lesson8]: lesson8CompletionStatus,
+            [lesson9]: lesson9CompletionStatus,
+            [lesson10]: lesson10CompletionStatus,
+        });
+        
+
+        alert('User created!');
+        window.location.href = "../login/login.html";
+        } catch (error) {
+            const errorMessage = error.message;
+            alert(errorMessage);
+        }
+    });
+
+
+</script>
+</html>
+<!-- remember to add a parent's email function to the sign in process. (send an email everytime they log in/ensure that their child is the one logging in.)-->

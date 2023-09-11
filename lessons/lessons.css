@@ -16,10 +16,36 @@ div.top-bar{
     align-items: center;
 }
 
+div.progress-section{
+    float: right;
+    margin-top: 3.5vh;
+    margin-right: 3vw;
+    display: flex;
+    align-items: center;
+}
+
+div.progress{
+    background-color: #fafafa;
+    border-radius: 22px;
+    height: 2.5vh;
+    width: 15vw;
+}
+
+div.progress-done{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-linear-gradient(to left, #13f75e, #13f75e);
+    border-radius: 20px;
+    color: #fafafa;
+    height: 100%;
+    width: 0;
+}
+
 div.lesson-container{
     height: 120vh;
     width: 100vw;
-    padding: 3vh 8vw;
+    padding: 2vh 8vw;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -54,7 +80,7 @@ img.logo{
     height: 3.5em;
     width: 12.25em;
     margin-left: 3vw;
-    margin-top: 1.25vh;
+    margin-top: 1.5vh;
 }
 
 button.drop-button {
@@ -105,4 +131,13 @@ button.drop-button:hover{
 
 a.current-lesson, a.current-lesson:hover, a.current-lesson:active{
     background-color: #bbe6f2;
+}
+
+video.video{
+    width: 80vw;
+}
+
+div.video-container{
+    padding: 5vh 0;
+    text-align: center;
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Lesson 5 | CodeVerse</title>
+    <link rel="stylesheet" href="lessons.css">
+    <link rel="shortcut icon" type="image/png" href="../Photos/gearLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="../homePage/homePage.html"><img src="../Photos/logo.png" alt="Our logo" class="logo"></a>
+        <div class="dropdown">
+            <button onclick="drop()" class="drop-button">Lessons</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="lesson1.html">1. What is coding about?</a>
+                <a href="lesson2.html">2. What are functions?</a>
+                <a href="lesson3.html">3. Variables</a>
+                <a href="lesson4.html">4. Data types</a>
+                <a href="lesson5.html" class="current-lesson">5. Type casting</a>
+                <a href="lesson6.html">6. If else statements</a>
+                <a href="lesson7.html">7. While and for loops</a>
+                <a href="lesson8.html">8. Logical operators</a>
+                <a href="lesson9.html">9. Lists</a>
+                <a href="lesson10.html">10. Functions</a>
+            </div>
+        </div>
+      </div>
+      <script>
+        function drop(){
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.drop-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }   
+      </script>
+</body>
+</html>
