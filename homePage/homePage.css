@@ -51,14 +51,13 @@ div.top-part{
 }
 
 div.welcome-message-portion{
-    width: 28vw;
+    width: 31vw;
+    margin-left: 12vw;
 }
 
 div.welcome-portion{
-    margin-top: 12vh;
+    margin-top: 8vh;
     padding-bottom: 16vh;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 h1.top-welcome-message, p.bottom-welcome-message{
@@ -94,6 +93,9 @@ a.view-courses-button:hover, a.view-courses-button:active{
 img.coding-icon{
     height: 40vh; /*10 : 11*/
     width: 44vh;
+    position: absolute;
+    right: 12vw;
+    top: 20vh;
 }
 
 div.about-website{

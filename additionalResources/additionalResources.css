@@ -53,18 +53,18 @@ div.top-part{
 }
 
 h1.resource-header{
-    margin: 14vh 0 14vh 15vw;
+    margin: 10vh 0 14vh 12vw;
     color: #fafafa;
     font-size: 6vh;
     line-height: 9vh;
-    width: 36vw;
+    width: 39vw;
 }
 
 img.books-logo{
     height: 36vh;
     width: 22vw;
     position: absolute;
-    right: 15vw;
+    right: 12vw;
     top: 24vh;
 }
 
