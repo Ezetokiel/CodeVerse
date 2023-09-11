@@ -87,11 +87,11 @@ a.get-started-button:hover, a.sign-in-button:hover{
 }
 
 img.icon{
-    height: 50vh;
-    width: 26vw;
+    height: 45vh;
+    width: 24vw;
     position: absolute;
     right: 15vw;
-    top: 24vh;
+    top: 25vh;
 }
 
 /* font sizes formatted √
